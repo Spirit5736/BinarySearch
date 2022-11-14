@@ -6,7 +6,6 @@ int? FindValue(int[] list, int item)
     int lowValue = 0;
     int highValue = list.Length - 1;
 
-
     while (lowValue <= highValue)
     {
         int midValue = (lowValue + highValue) / 2;
@@ -25,6 +24,5 @@ int? FindValue(int[] list, int item)
             highValue = midValue - 1;
         }
     }
-
     return null;
 }
